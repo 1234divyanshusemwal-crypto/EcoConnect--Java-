@@ -56,7 +56,7 @@ function login() {
     }));
 
     // Redirect based on role
-    if      (role === 'student')    window.location.href = 'dashboard.html';
+    if      (role === 'student')    window.location.href = 'student/dashboard.html';
     else if (role === 'ragpicker')  alert('Ragpicker dashboard — coming soon (Priyanshu)');
     else if (role === 'kabadiwala') alert('Kabadiwala dashboard — coming soon (Himanshu)');
     else if (role === 'recycler')   alert('Recycler dashboard — coming soon (Divyanshu)');
