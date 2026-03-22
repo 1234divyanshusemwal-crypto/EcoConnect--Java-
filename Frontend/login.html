@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoConnect — Login</title>
+</head>
+<body>
+
+    <h1>EcoConnect</h1>
+    <p>Login to continue</p>
+
+    <form id="loginForm">
+
+        <label>User ID:</label><br>
+        <input type="text" id="userId" placeholder="Enter your ID"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password" placeholder="Enter password"><br><br>
+
+        <label>Role:</label><br>
+        <select id="role">
+            <option value="student">Student</option>
+            <option value="ragpicker">Ragpicker</option>
+            <option value="kabadiwala">Kabadiwala</option>
+            <option value="recycler">Recycler</option>
+        </select><br><br>
+
+        <button type="button" onclick="login()">Login</button>
+
+        <p id="errorMsg" style="color:red;"></p>
+    </form>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Waste — EcoConnect</title>
+</head>
+<body>
+
+    <h1>List Your Waste</h1>
+    <p>Fill in the details of the waste you want to sell/recycle</p>
+
+    <form id="wasteForm">
+
+        <label>Waste Type:</label><br>
+        <select id="wasteType">
+            <option value="plastic">Plastic</option>
+            <option value="paper">Paper</option>
+            <option value="metal">Metal</option>
+            <option value="glass">Glass</option>
+            <option value="ewaste">E-Waste</option>
+        </select><br><br>
+
+        <label>Quantity (kg):</label><br>
+        <input type="number" id="quantity" placeholder="e.g. 5" min="0.1" step="0.1"><br><br>
+
+        <label>Pickup Address:</label><br>
+        <textarea id="address" rows="3" placeholder="Enter your address"></textarea><br><br>
+
+        <label>Preferred Date:</label><br>
+        <input type="date" id="pickupDate"><br><br>
+
+        <button type="button" onclick="submitListing()">Submit Listing</button>
+
+        <p id="successMsg" style="color:green;"></p>
+        <p id="errorMsg"   style="color:red;"></p>
+    </form>
+
+    <br>
+    <a href="dashboard.html">← Back to Dashboard</a>
+
+    <script src="waste-listing.js"></script>
+</body>
+</html>

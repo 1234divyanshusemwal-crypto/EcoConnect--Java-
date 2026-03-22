@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard — EcoConnect</title>
+</head>
+<body>
+
+    <h1>Student Dashboard</h1>
+
+    <!-- Student info filled by JS from localStorage -->
+    <p>Welcome, <strong id="studentName">--</strong></p>
+    <p>ID: <span id="studentId">--</span></p>
+    <p>Eco Points: <span id="ecoPoints">--</span></p>
+
+    <hr>
+
+    <h2>My Pickup Requests</h2>
+    <!-- Table filled by JS -->
+    <table border="1" id="requestsTable">
+        <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>Waste Type</th>
+                <th>Quantity (kg)</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="requestsBody">
+            <!-- rows added by dashboard.js -->
+        </tbody>
+    </table>
+
+    <br>
+    <a href="waste-listing.html">+ List New Waste</a> &nbsp;|&nbsp;
+    <a href="pickup-request.html">+ Request Pickup</a> &nbsp;|&nbsp;
+    <a href="login.html" onclick="logout()">Logout</a>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

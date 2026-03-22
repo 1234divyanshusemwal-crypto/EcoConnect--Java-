@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Pickup — EcoConnect</title>
+</head>
+<body>
+
+    <h1>Request a Pickup</h1>
+    <p>A ragpicker will be assigned to your location (nearest first — Priority Queue)</p>
+
+    <form id="pickupForm">
+
+        <label>Waste Type:</label><br>
+        <select id="wasteType">
+            <option value="plastic">Plastic</option>
+            <option value="paper">Paper</option>
+            <option value="metal">Metal</option>
+            <option value="glass">Glass</option>
+            <option value="ewaste">E-Waste</option>
+        </select><br><br>
+
+        <label>Estimated Quantity (kg):</label><br>
+        <input type="number" id="quantity" placeholder="e.g. 3" min="0.1" step="0.1"><br><br>
+
+        <label>Your Location (Area/Landmark):</label><br>
+        <input type="text" id="location" placeholder="e.g. Rajpur Road, Dehradun"><br><br>
+
+        <label>Notes (optional):</label><br>
+        <textarea id="notes" rows="2" placeholder="Any special instructions"></textarea><br><br>
+
+        <button type="button" onclick="submitRequest()">Request Pickup</button>
+
+        <p id="successMsg" style="color:green;"></p>
+        <p id="errorMsg"   style="color:red;"></p>
+    </form>
+
+    <!-- Show all my requests -->
+    <hr>
+    <h2>My Previous Requests</h2>
+    <div id="myRequests"></div>
+
+    <br>
+    <a href="dashboard.html">← Back to Dashboard</a>
+
+    <script src="pickup-request.js"></script>
+</body>
+</html>
